@@ -14,9 +14,17 @@ $(document).ready(function() {
   		} else {};
 //  		var translated = $pig.join(" ");
 		all = all + word + ' ';
-		return all;
-  	  	});
+		});
   	  	
   	  	$translated.text(all);
-	  }); 
+	}); 
+	  
+	$("#english").keydown(function(event){
+		if(event.keyCode == 13){
+			$("#translate").click();
+			$('#english').val('');
+		}
+	});
+	
+	
 });
