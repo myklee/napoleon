@@ -22,7 +22,7 @@ $(document).ready(function() {
 	$("#english").keydown(function(event){
 		if(event.keyCode == 13){
 			$("#translate").click();
-			$('#english').val('');
+			//$('#english').val('');
 		}
 	});
 	
