@@ -1,7 +1,7 @@
 $(document).ready(function() {
   
   
-  $('#translate').click(function(){
+  $('.bgImg').click(function(){
   	var english = $('#english').val();
   	var split = english.split(" ");
   	var $translated = $('#translated');
@@ -21,7 +21,7 @@ $(document).ready(function() {
 	  
 	$("#english").keydown(function(event){
 		if(event.keyCode == 13){
-			$("#translate").click();
+			$(".bgImg").click();
 		}
 	});
 	
