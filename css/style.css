@@ -132,7 +132,9 @@ overflow: hidden;
 	border-right: 1px solid rgba(255, 255, 255, .2);
 	border-bottom: 1px solid rgba(255, 255, 255, .3);
 	border-left: 1px solid rgba(150, 10, 10, .2);
-	border-top: 1px solid rgba(150, 10, 10, .2);	
+	border-top: 1px solid rgba(150, 10, 10, .2);
+	text-shadow: rgba(255,255,255, .75) 1px 1px 0px;
+		
 }
 #translated {
 	background: rgba(242, 220, 220, 1);
@@ -201,38 +203,6 @@ textarea {
 	#english, #translated span {
 		padding:.2em;
 	}
-  
-  /* html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
-  /*h1 {
-  	font-size: 21px;
-  }
-  #english {
-  	font-size: 24px; 	
-  }
-  #pl {  position: absolute;
-  top:75px;
-  left: 2%; 
-  }
-  #en {
-  	position: absolute;
-  	bottom: 70px;
-  	left: 2%;
-  }
-  p#translated {
-  	font-size: 24px;  	
-   }
-  section {
-  	padding: 2em 0;
-  }
-  #container>header h1, #container>header small {
-  display: block;
-  }
-  #container>footer h1, #container>footer small {
-  display: none;
-  }
-  #translate {
-   	background-size:40% 40%;
-  }*/
-  
+    
 }
 
