@@ -14,9 +14,9 @@ $(document).ready(function() {
   			} else {}
   		
 			all = all + word + ' ';
-		});
-  	  	
+		});  	  	
   	  	$translated.text(all);
+  	  	$translated.animate({opacity:1},{duration:650, easing: 'swing'});
 	}); 
 	  
 	$("#english").keydown(function(event){

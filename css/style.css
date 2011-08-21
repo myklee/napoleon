@@ -22,41 +22,12 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-blockquote, q { quotes: none; }
-blockquote:before, blockquote:after,
-q:before, q:after { content: ""; content: none; }
-ins { background-color: #ff9; color: #000; text-decoration: none; }
-mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
-del { text-decoration: line-through; }
-abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
-table { border-collapse: collapse; border-spacing: 0; }
 hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
 input, select { vertical-align: middle; }
 
-body { /*font:13px/1.231 sans-serif;*/ *font-size:small; }
-select, input, textarea, button { font:99% sans-serif; }
-pre, code, kbd, samp { font-family: monospace, sans-serif; }
-
-html { overflow-y: scroll; }
 a:hover, a:active { outline: none; }
-ul, ol { margin-left: 2em; }
-ol { list-style-type: decimal; }
-nav ul, nav li { margin: 0; list-style:none; list-style-image: none; }
-small { font-size: 85%; }
-strong, th { font-weight: bold; }
-td { vertical-align: top; }
-sub, sup { font-size: 75%; line-height: 0; position: relative; }
-sup { top: -0.5em; }
-sub { bottom: -0.25em; }
 
-pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; padding: 15px; }
-textarea { overflow: auto; } 
-.ie6 legend, .ie7 legend { margin-left: -7px; } 
-input[type="radio"] { vertical-align: text-bottom; }
-input[type="checkbox"] { vertical-align: bottom; }
-.ie7 input[type="checkbox"] { vertical-align: baseline; }
-.ie6 input { vertical-align: text-bottom; }
-label, input[type="button"], input[type="submit"], input[type="image"], button { cursor: pointer; }
+
 button, input, select, textarea { margin: 0; }
 input:valid, textarea:valid   {  }
 input:invalid, textarea:invalid { border-radius: 1px; -moz-box-shadow: 0px 0px 5px red; -webkit-box-shadow: 0px 0px 5px red; box-shadow: 0px 0px 5px red; }
@@ -108,37 +79,42 @@ a:hover { color: #036; }
   h2, h3{ page-break-after: avoid; }
 }
 html {
-background: -moz-radial-gradient(50% 50%, farthest-side, #487a77, #fff);
-background: -webkit-gradient(radial, 50% 0%, 0, 50% 0%, 350, from(rgb(244, 227, 227)), to(rgb(242, 201, 201)));
-
-/*background-image: -moz-radial-gradient(75% 19%, ellipse closest-side, #0000ff 0%,#ff00ff 33%,#99765c 66%);
-background-image: -webkit-radial-gradient(75% 19%, ellipse closest-side, #0000ff 0%,#ff00ff 33%,#99765c 66%);
-background-image: -o-radial-gradient(75% 19%, ellipse closest-side, #0000ff 0%,#ff00ff 33%,#99765c 66%);
-background-image: -ms-radial-gradient(75% 19%, ellipse closest-side, #0000ff 0%,#ff00ff 33%,#99765c 66%);*/
-background-image: -webkit-radial-gradient(50% 19%, ellipse closest-side, rgb(244, 224, 224) 0%,rgb(242, 215, 215) 60%,rgb(242, 201, 201) 100%);
-
-
- height: 100%;
+background: rgb(242, 201, 201);
 }
+
 body {
+	font-family: 'Abel', sans-serif;
 	font-weight: 400;
 	color: #845C4D;
 	letter-spacing: .2em;
-	
+	background: -moz-radial-gradient(50% 50%, farthest-side, #487a77, #fff);
+	background: -webkit-gradient(radial, 50% 0%, 0, 50% 0%, 50%, from(rgb(244, 227, 227)), to(rgb(242, 201, 201)));
 }
 section {
-	padding: 2em 5em;
-	
+	padding: 2em 0;
 }
+
 #container>header, div#main, #container>footer {
 	text-align: center;
 	width: 100%;
 }
 #container>header {
-	padding: 3em 0 0 0;	
+	padding: 1.5em 0 0 0;	
 }
-#container>header h1 {
-	font-size: 2em;
+label {
+	text-shadow: rgba(255,255,255,.75) 1px 1px 0px;	
+	font-size: 13px;
+}
+#container>header h1, #container>header small {
+display: none;
+}
+
+#container>footer {
+	position: fixed;
+	bottom: 0;
+}
+h1 {
+	font-size: 21px;
 	text-align: center;
 	font-weight: 300;
 	text-transform: uppercase;	
@@ -147,73 +123,103 @@ section {
 	letter-spacing: .3em;
 	text-shadow: rgba(255,255,255,.75) 1px 1px 0px;
 }
-#container>header
-label {
-	text-shadow: rgba(255,255,255,.75) 1px 1px 0px;	
-	font-size: 1.33em;
-}
-#container>header small {	
-	font-size: 1.33em;
+ small {	
+	font-size: 13px;
 	letter-spacing: .1em;
 	text-shadow: rgba(255,255,255,.75) 1px 1px 0px;	
 }
+#container>footer h1, #container>footer small  {
+	position: relative;
+	top: -70px;
+	
+}
+
+#container>footer #emblem {
+	background:#42210B;
+	height: 30px;	
+}
+#container>footer #emblem .bgImg {
+	background:url(../images/emblem.png) no-repeat 50% transparent;
+	position: relative;
+	top: -33px;
+	height: 52px;
+	}
+	
 input:focus {
     outline-width: 0;
 }
 #english {
+	font-family: 'Abel', sans-serif;
+	font-weight: 400;
+	color: #845C4D;
+	letter-spacing: .2em;
 	font-size: 2em;
 	width: 90%;
-	background: transparent;
+	background: rgba(243, 223, 209, 1);
 	border: 0;
 	padding-top: 1em;
 	padding-bottom: 0;
-	border-bottom: 1px solid #C1A7A7;
+	margin-bottom: 10px;
+	/*border: 1px solid #C1A7A7;*/
 	vertical-align: baseline;
 	text-align: center;
+	background: -webkit-gradient(radial, 0% 0%, 0, 0% 0%, 600, from(rgb(243, 223, 209)), to(rgb(242, 217, 182)));
+	box-shadow: inset 0px 0px 8px rgba(226,83,27, .5);
+	border-right: 1px solid rgba(255, 255, 255, .2);
+	border-bottom: 1px solid rgba(255, 255, 255, .3);
 	
 	}
 	label {
 		display: block;
 	}
 #translate {
-	font-family: garamond-premier-pro-display;
 	font-size: 2em;
+	padding: 1em;
 	border:0;	
 	margin: 1em auto;
-	width:207px;
-	height: 102px;	
-	background: url('../images/btnPig.png') no-repeat center top;
+	/*background: url('../images/btnPig.png') no-repeat center top;*/
 	color: #fff;
-	opacity: .3;
+	opacity: 0;
 }
 #translate span {
-	display: block;
-	position: absolute;
-	top: 20%;
-	left: 25%;
 	letter-spacing: .1em;
 	display:none;
+	padding:1em 1em;
 }
-#translated {
-	font-size: 4em;
-	padding:5em;
+p#translated {
+	font-size: 2em;
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	background: rgb(242, 215, 215);
+	box-shadow:  0px 0px 8px rgba(226,83,27, .5);
+	/*background: -webkit-gradient(radial, 0% 0%, 0, 0% 0%, 600, from(rgb(243, 223, 209)), to(rgb(242, 217, 182)));
+	box-shadow: inset 0px 0px 8px rgba(226,83,27, .5);*/
+	opacity: 0;
 }
+
 @media screen and (max-width: 480px) {
   
   /* html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
   #english {
-  	margin-top: 10em;
-  	font-size: 1em;
-  	width: 100%;  	
+  	font-size: 1em; 	
   }
   #translated {
-  	font-size: 1.3em;
-  	padding:1em 1em;
-  	margin-top: -6em;
+  	font-size: 1em;
+  	
+  }
+  #main fieldset {
+  	bottom: 30%;
   }
   section {
-  	padding: 2em 1em;
-  	
+  	padding: 2em 0;
+  }
+  #container>header h1, #container>header small {
+  display: block;
+  }
+  #container>footer h1, #container>footer small {
+  display: none;
   }
   #translate {
    	background-size:40% 40%;
