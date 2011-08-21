@@ -48,7 +48,7 @@ section {
 label {
 	display: block;
 	text-shadow: rgba(255, 255, 255, .5) 1px 1px 0px;	
-	font-size: 13px;
+	font-size: 18px;
 	text-transform: uppercase;
 }
 #container>header h1, #container>header small {
@@ -109,7 +109,7 @@ input:focus {
 	border-bottom: 1px solid rgba(255, 255, 255, .3);
 	border-left: 1px solid rgba(150, 10, 10, .2);
 	border-top: 1px solid rgba(150, 10, 10, .2);	
-	border-radius: 5px;
+	border-radius: 8px;
 	}
 
 #translate {
@@ -152,8 +152,7 @@ p#translated {
 	padding: 1em;
 	background: rgba(242, 220, 220, .5);
 	box-shadow:  0px 0px 8px rgba(150,83,27, .2);
-	/*background: -webkit-gradient(radial, 0% 0%, 0, 0% 0%, 600, from(rgb(243, 223, 209)), to(rgb(242, 217, 182)));
-	box-shadow: inset 0px 0px 8px rgba(226,83,27, .5);*/	
+	border-radius: 8px;
 }
 
 @media screen and (max-width: 480px) {
