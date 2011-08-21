@@ -22,42 +22,44 @@ footer, header, hgroup, menu, nav, section {
 
 html {
 background: rgb(242, 201, 201);
-background: -moz-radial-gradient(50% 50%, farthest-side, #487a77, #fff);
-background: -webkit-gradient(radial, 50% 0%, 0, 50% 0%, 300, from(rgb(244, 227, 227)), to(rgb(242, 201, 201)));
+background: -moz-radial-gradient(50% 0%, farthest-side, rgb(244, 227, 227), rgb(242, 201, 201));
+background: -webkit-gradient(radial, 50% 0%, 0, 50% 0%, 400, from(rgb(244, 227, 227)), to(rgb(242, 201, 201)));
 height: 100%;
+box-shadow:inset 0px 0px 100px rgba(200, 50, 50, .3);
 }
 
 body {
 	font-family: 'Abel', sans-serif;
 	font-weight: 400;
-	color: #845C4D;
 	letter-spacing: .1em;
-	
+	color: rgba(100, 10, 10, 1);	
 	}
 section {
-	padding: 2em 0;
 }
 
 #container>header, div#main, #container>footer {
 	text-align: center;
 	width: 100%;
 }
-#container>header {
-	padding: 20px 0 0 0;	
-}
 label {
 	display: block;
 	text-shadow: rgba(255, 255, 255, .5) 1px 1px 0px;	
 	font-size: 18px;
-	text-transform: uppercase;
+	text-transform: uppercase;	
 }
-#container>header h1, #container>header small {
-display: none;
+#pl label {
+	margin-top: 10px;
+}
+#container>header {
+	padding-top: 10%;
 }
 
 #container>footer {
 	position: fixed;
 	bottom: 0;
+}
+#container>footer h1, #container>footer small {
+display: none;
 }
 h1 {
 	font-size: 34px;
@@ -66,134 +68,142 @@ h1 {
 	text-transform: uppercase;	
 	margin: 0;
 	padding: 0;	
-	letter-spacing: .3em;
 	text-shadow: rgba(255,255,255,.75) 1px 1px 0px;
 }
  small {	
+ 	color: rgba(155,55,55,.8);
 	font-size: 13px;
-	letter-spacing: .1em;
-	text-shadow: rgba(255,255,255,.75) 1px 1px 0px;
+	text-shadow: rgba(255,255,255,.5) 1px 1px 0px;
 	text-transform: uppercase;
 }
-#container>footer h1, #container>footer small  {
-	position: relative;
-	top: -70px;
-	
+
+#emblem {
+	margin: 20px 0 0 0;
 }
-#container>footer #emblem .bgImg {
+.bgImg {
 	background:url(../images/emblem.png) no-repeat 50% transparent;
 	position: relative;
 	height: 56px;
 	}
 	
-input:focus {
+textarea:focus, input:focus {
     outline-width: 0;
+}
+
+#pl, #en {
+width: 96%;
+margin: 0 auto;
+overflow: hidden;
+}
+#pl {
+
+}
+#translate{
+	font-size: 13px;
+	background: rgba(242, 220, 220, 1);
+	border: 0;
+	margin: 0;
+	border-bottom-right-radius: 10px;	
+	border-bottom-left-radius: 10px;	
+	border-bottom: 1px solid rgba(255, 255, 255, .3);
+	border-left: 1px solid rgba(150, 10, 10, .2);
+	position: relative;
+	top: -1px;
+	color: rgba(100, 10, 10, .5);
+	text-shadow: rgba(255, 255, 255, .5) 1px 1px 0px;
+	text-transform: uppercase;	
+	padding: 10px;
+	cursor: pointer;
+	letter-spacing: .2em;
+}
+#translate:hover {
+	color: rgba(100, 10, 10, 1);
+}
+#translated, #english {
+	color: rgba(100, 10, 10, 1);
+	font-size: 34px;
+	font-family: 'Abel', sans-serif;
+	font-weight: 400;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;
+	width: 100%;
+	border-radius: 8px;		
+	border-right: 1px solid rgba(255, 255, 255, .2);
+	border-bottom: 1px solid rgba(255, 255, 255, .3);
+	border-left: 1px solid rgba(150, 10, 10, .2);
+	border-top: 1px solid rgba(150, 10, 10, .2);	
+}
+#translated {
+	background: rgba(242, 220, 220, 1);
+	display: none;
+	box-shadow:inset  0px 0px 8px rgba(150,83,27, .4);
+}
+#translated span {
+	display: block;
+	padding: .5em;
+}
+textarea {
+	border: 0;
+	margin: 0;
+	resize: none;
 }
 #english {
 	width: 100%;
-	font-family: 'Abel', sans-serif;
-	font-weight: 400;
-	color: #845C4D;
-	font-size: 2em;
 	background: rgba(243, 223, 209, 1);
-	border: 0;
-	padding-top: 1em;
-	padding-bottom: 0;
-	margin-bottom: 10px;
 	/*border: 1px solid #C1A7A7;*/
 	vertical-align: baseline;
 	text-align: center;
 	background: -webkit-gradient(radial, 0% 0%, 0, 0% 0%, 600, from(rgb(243, 223, 209)), to(rgb(242, 217, 182)));
 	box-shadow: inset 0px 0px 8px rgba(226,83,27, .5);
-	border-right: 1px solid rgba(255, 255, 255, .2);
-	border-bottom: 1px solid rgba(255, 255, 255, .3);
-	border-left: 1px solid rgba(150, 10, 10, .2);
-	border-top: 1px solid rgba(150, 10, 10, .2);	
-	border-radius: 8px;
+	padding: .5em;
 	}
 
-#translate {
-	font-size: 2em;
-	padding: 1em;
-	border:0;	
-	margin: 1em auto;
-	/*background: url('../images/btnPig.png') no-repeat center top;*/
-	color: #fff;
-	opacity: 0;
-	display: none;
-}
-#translate span {
-	letter-spacing: .1em;
-	display:none;
-	padding:1em 1em;
-}
 
-#pl {
-width: 96%;
-position: relative;
-top: 30px;
-left: 2%;
-opacity: 0;
-}
-#en {
-	width: 96%;
-	position: relative;
-	left: 2%;
-}
-#pl label {
-	position: relative;
-	top: 10px;
-}
-
-p#translated {
-	box-sizing: border-box;
-	width: 100%;
-	font-size: 34px;
-	padding: 1em;
-	background: rgba(242, 220, 220, .5);
-	box-shadow:  0px 0px 8px rgba(150,83,27, .2);
-	border-radius: 8px;
-}
-
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 520px) {
   
   /* html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
   h1 {
   	font-size: 21px;
   }
-  #english {
-  	font-size: 24px; 	
+  small {
+  	font-size: 13px;
   }
-  #pl {  position: absolute;
-  top:120px;
-  left: 2%; 
+  #english, #translated {
+  	font-size: 21px; 	
   }
-  #en {
-  	position: absolute;
-  	bottom: 115px;
-  	left: 2%;
-  }
-  p#translated {
-  	font-size: 24px;  	
-   }
-  section {
-  	padding: 2em 0;
-  }
-  #container>header h1, #container>header small {
-  display: block;
-  }
-  #container>footer h1, #container>footer small {
-  display: none;
-  }
-  #translate {
-   	background-size:40% 40%;
-  }
+  
   
 }
-@media screen and (max-height: 480px) {
+@media screen and (max-height: 300px) {
+
+	#container>header {
+		padding-top: 1%;
+	}
+	h1 {
+		font-size: 21px;
+	}
+	small {
+		font-size: 13px;
+	}
+	#english, #translated {
+		font-size: 21px; 	
+	}
+	#emblem {
+		position: fixed;
+		bottom: 0px;
+	}
+	#translate {
+		font-size: 10px;
+		padding: 5px;
+		letter-spacing: 0;
+	}
+	#english, #translated span {
+		padding:.2em;
+	}
   
   /* html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
-  h1 {
+  /*h1 {
   	font-size: 21px;
   }
   #english {
@@ -222,7 +232,7 @@ p#translated {
   }
   #translate {
    	background-size:40% 40%;
-  }
+  }*/
   
 }
 

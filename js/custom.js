@@ -1,7 +1,7 @@
 $(document).ready(function() {
   
   
-  $('.bgImg').click(function(){
+  $('#translate').click(function(){
   	var english = $('#english').val();
   	var split = english.split(" ");
   	var $translated = $('#translated');
@@ -15,13 +15,17 @@ $(document).ready(function() {
   		
 			all = all + word + ' ';
 		});  	  	
-  	  	$translated.text(all);
-  	  	$('#pl').animate({opacity:1},{duration:650, easing: 'swing'});
+  	  	$('#translated span').text(all);
+
+  	  	//$translated.animate({opacity:1 },{duration:150, easing: 'swing'});
+  	  	$('#translated').slideDown(600);
+  	
+  	  	//$translated.animate({padding: '.5em'}, {duration:2000});
 	}); 
 	  
 	$("#english").keydown(function(event){
 		if(event.keyCode == 13){
-			$(".bgImg").click();
+			$("#translate").click();
 		}
 	});
 	
