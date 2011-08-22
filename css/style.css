@@ -162,9 +162,12 @@ textarea {
 	}
 
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 480px) {
   
   /* html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
+  body {
+  	text-shadow: rgba(255,255,255, .75) 1px 1px 1px;
+  }
   h1 {
   	font-size: 21px;
   }
@@ -174,6 +177,11 @@ textarea {
   #english, #translated {
   	font-size: 21px; 	
   }
+  .bgImg {
+   	margin-bottom: -10px;
+  	background-size:180px;
+  	}
+  	
   
   
 }
@@ -193,7 +201,8 @@ textarea {
 	}
 	#emblem {
 		position: fixed;
-		bottom: 0px;
+		bottom: 0;
+		width: 100%;	
 	}
 	#translate {
 		font-size: 10px;
@@ -203,6 +212,10 @@ textarea {
 	#english, #translated span {
 		padding:.2em;
 	}
+	.bgImg {	
+		margin-bottom: -10px;
+	 	background-size:180px;
+	 }
     
 }
 
